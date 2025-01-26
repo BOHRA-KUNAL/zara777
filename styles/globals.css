@@ -1,0 +1,550 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+}
+
+:root {
+  --primary-color: #7400aa;
+  --primary-light: #7400aa;
+  --galiCardBG: #d9d9d9;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.text-danger{
+  color: #ff6977 !important;
+}
+
+.logoimg {
+  width: 100px;
+}
+
+.customCard {
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  box-shadow: 0px 0px 3px 0px #d8d8d8;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 5px 0px;
+  padding: 25px;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.btn-theme {
+  color: #fff;
+  background-color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.btn-outline-theme {
+  border: 1px solid var(--primary-light);
+  color: var(--primary-color);
+}
+
+h3 {
+  font-weight: 500;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.whatsappcolor {
+  background-color: var(--whatsappcolor) !important;
+}
+
+.darkorangeColor {
+  background-color: var(--darkorangeColor) !important;
+}
+
+.orangeColor {
+  background-color: var(--orangeColor) !important;
+}
+
+.greenColor {
+  background-color: var(--greenColor) !important;
+}
+
+.bgPurple {
+  background: var(--purpleColor);
+}
+
+.walleticons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.walleticons .img {
+  background: white;
+  width: max-content;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.walleticons img {
+  width: 35px;
+}
+
+.chips {
+  color: var(--primary-light);
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.boxshadow {
+  box-shadow: 0 4px 4px 0 #00000025;
+}
+
+.border {
+  border: 1px solid #000000;
+  border-radius: 6px;
+}
+
+.heading {
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+}
+
+.f-13 {
+  font-size: 13px;
+  color: #fff;
+}
+
+.f-12 {
+  font-size: 12px;
+  color: #fff;
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+.maxWidth {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eaeaea17;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.mw-32 {
+  min-width: 90px;
+  width: 100%;
+  max-width: 92px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.gamecard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gamecard img {
+  max-width: 100%;
+}
+
+.cardBoxes {
+  width: 200px;
+  text-align: center;
+}
+
+.cardBoxes:hover,
+.activeBox {
+  background-color: var(--primary-light);
+  color: #3d0657;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.modal-backdrop {
+  display: none !important;
+}
+
+.pointsmodal .modal-dialog {
+  margin: 20px auto !important;
+}
+
+.w-270 {
+  min-width: 270px;
+}
+
+.bg-gray {
+  background: #f2f2f2;
+}
+
+/* ================================ */
+
+@media (max-width: 500px) {
+  .w-270 {
+    width: 200px;
+    min-width: 200px;
+  }
+}
+
+.mw700 {
+  max-width: 700px;
+}
+
+.galiCard {
+  width: 100%;
+  background: var(--galiCardBG);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.galiCardgalideswar{
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  min-height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.galiCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+.bg-yellow {
+  background: #ebf1b1;
+  color: var(--purpleColor);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.bg-primary {
+  background-color: #6eec8e !important;
+}
+
+.colorful-button {
+  /* background: linear-gradient(to right, #6a1b29, #b63e8f, #f46d43); */
+  background: #0d6efd !important;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 18px;
+  width: 100%;
+}
+
+.colorful-button:hover {
+  background: linear-gradient(to right, #7a1c2a, #c94f9d, #f57c47);
+}
+
+.button-money {
+  /* background-color: #fff; Primary color */
+  border: 2px solid #fff;
+  color: #fff; /* Text color */
+  padding: 12px 24px; /* Padding for the button */
+  
+  border-radius: 8px; /* Rounded corners */
+  font-size: 12px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  cursor: pointer; /* Cursor style */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 8px 15px rgba(80, 80, 80, 0.2); /* Shadow effect */
+}
+
+.button-money.selected {
+  background-color: #fff; /* Primary color */
+  color: #3d0657; /* Text color */
+}
+
+.button-money:hover {
+  color: #3d0657;
+  background-color: #fff; /* Darken background on hover */
+  box-shadow: 0 12px 20px rgba(80, 80, 80, 0.2); /* Larger shadow on hover */
+  transform: translateY(-2px); /* Slightly lift the button */
+}
+
+.button-money:active {
+  color: #3d0657;
+  background-color: #fff; /* Even darker background when clicked */
+  box-shadow: 0 4px 10px rgba(80, 80, 80, 0.2); /* Smaller shadow when clicked */
+  transform: translateY(2px); /* Slightly push the button down */
+}
+
+.showbackgroundnl {
+  background: linear-gradient(90deg, rgba(22, 25, 49, 1) 0%, rgba(33, 36, 100, 1) 50%, rgba(22, 25, 49, 1) 100%) !important;
+}
+
+
+.sectionhome {
+  /* background: linear-gradient(90deg, rgba(22, 25, 49, 1) 0%, rgba(33, 36, 100, 1) 50%, rgba(22, 25, 49, 1) 100%); */
+  margin-bottom: 1.5625rem;
+  /* margin-top: 1.5625rem; */
+}
+
+.stol-400 {
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 400;
+  color: white;
+}
+
+.yellow-gradient {
+  /* background: linear-gradient(0deg, rgba(255, 199, 0, 1) 6%, rgba(252, 238, 33, 1) 50%, rgba(255, 239, 0, 1) 100%); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* font-size: 16px; */
+  color: #ffc700;
+  font-weight: bold;
+}
+
+.green-text-gradient {
+  color: #008d17;
+  background-image: -webkit-linear-gradient(90deg, #008d17 0%, #24ff00 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.static_downloadbtn__empire {
+  width: 100%;
+  height: 57px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 1.0rem;
+  margin-bottom: 0.5rem;
+
+  -webkit-animation-duration: 64s;
+  animation-duration: 64s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: sweep;
+  animation-name: sweep;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+.btn-style {
+  background: linear-gradient(0deg, rgba(255, 199, 0, 1) 6%, rgb(222 209 13) 50%, rgb(236 224 36) 100%);
+  border-radius: 100px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: stolzl-500;
+  line-height: 21px;
+}
+
+.h2-Info {
+  margin: 3px;
+  color: #e3d716;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.pinfo {
+  font-style: normal;
+  color: #d0d0d0;
+  font-weight: bold;
+}
+
+.new-footer-row {
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  column-gap: 24px;
+  row-gap: 0;
+  flex-wrap: wrap;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+ul.new-footer-row li a {
+  display: inline-block;
+  line-height: 30px;
+  color: #fff;
+  margin: 5px;
+}
+
+ul.new-footer-row li a:after {
+  content: "|";
+  padding: 0 15px;
+  position: absolute;
+  color: #fff;
+}
+
+.container-keyword {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+}
+
+.downloadp {
+  margin: 0px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.fixed-bid {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(249, 249, 249, 0.98);
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.12);
+  min-height: 60px;
+  height: calc(62px +(env(safe-area-inset-bottom))* 1.1);
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Download button css start */
+
+.link-input .download-link-bg {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* width: 240px; */
+  height: 60px;
+  background: linear-gradient(0deg, rgba(255, 199, 0, 1) 6%, rgb(222 209 13) 50%, rgb(236 224 36) 100%);
+  
+  border-radius: 100px;
+  
+}
+
+.link-input .download-link-bg button {
+  background: linear-gradient(60.19deg,rgba(133,239,49,0) 25.73%,rgb(255 255 255 / 40%) 45.27%,rgba(133,239,49,0) 62.27%),rgba(255,255,255,0);
+  font-size: 1.1em;
+  color: #5d1049;
+  display: inline-block;
+  position: relative;
+  -webkit-animation-duration: 64s;
+  animation-duration: 64s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: sweep;
+  animation-name: sweep;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7em;
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 18px; */
+  line-height: 20px;
+  text-shadow: 0 1px 4px rgba(0,0,0,.12);
+  border: none;
+  font-size: 1.25rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,.12);
+  gap: 10px;
+}
+
+
+
+
+@keyframes sweep {
+  0% {
+      background-position: -10000px 0;
+  }
+
+  100% {
+      background-position: 10000px 0
+  }
+}
+
+/* Download button css end */
+
+
+/* accordian design  */
+.css-1c35hjw-MuiPaper-root-MuiAccordion-root{
+  /* background-color: #e3d716 !important; */
+  background: linear-gradient(82deg, #27003a 1.21%, #2a0143 97.93%);
+}
+
+.MuiTypography-root{
+  color: rgba(255, 255, 255, .7) !important;
+}
+
+.faq_section{
+  background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(17px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+

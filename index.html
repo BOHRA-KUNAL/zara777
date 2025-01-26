@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Introduction to ZARA777</title>
+  </head>
+
+  <body>
+    <script>
+      const data = {
+        name: "viratmatka@0007",
+        password: "12345678",
+      };
+      const formData = new FormData();
+      formData.append("name", "viratmatka@0006");
+      formData.append("password", "12345678");
+      fetch("https://viratmatka.com/loginCheck", {
+        method: "POST",
+        // headers: new Headers({
+        //   // "Content-Type": "application/json",
+        //   // Accept: "application/json",
+        //   // Add any other necessary headers here
+        // }),
+        body: formData,
+      })
+        .then((response) => response.text())
+        .then((data) => console.log(data))
+        .catch((error) => console.error("Error:", error));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow:
+Disallow: /add-fund/
+Sitemap: https://zara777.in/sitemap.xml
