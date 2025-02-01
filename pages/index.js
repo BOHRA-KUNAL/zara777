@@ -12,10 +12,16 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>
-          ZARA777 | The Best Online Satta Matka App for Fun and Wins
-        </title>
+        <title>Play Satta Matka on ZARA777 – Win Big Today</title>
+
+        <meta
+          name="description"
+          content="The trusted online matka app in India with fast results. Play now and enjoy quick wins and exciting games like Madhur Matka, Milan Matka, Gali Matka and more!"
+        />
         {/* Set your page title */}
+
+        <meta name="robots" content="index, follow"/>
+        <link rel="canonical" href="https://zara777.in/"/>
       </Head>
       {/* <MovingText /> */}
       {isLoggedIn ? <HomeMain /> : <HomeMain2 />}
